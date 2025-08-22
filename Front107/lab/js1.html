@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Java Script</title>
+</head>
+<body>
+     
+     <h1> Welcome to Java Script</h1>
+
+     <p id="demo">Original text</p>
+     <button onclick="document.getElementById('demo').innerHTML = 'Action changed'">
+     Change Text
+     </button>
+
+
+<p id="styleText">This text will turn red.</p>
+<button onclick="document.getElementById('styleText').style.color = 'red'">
+    Make Red
+</button>
+<br><br>
+
+<div id="box" style="width:100px;height:100px;background:blue;"></div>
+<button onclick="document.getElementById('box').style.display='none'">Hide</button>
+<button onclick="document.getElementById('box').style.display='block'">Show</button>
+
+<br><br>
+<input type="text" id="nameInput" placeholder="Enter your name">
+<button onclick="alert('Good Morning, ' + document.getElementById('nameInput').value)">
+    Greet Me
+</button>
+
+<br><br>
+<img id="myImage" src="tom.jpg" width="200">
+<button onclick="document.getElementById('myImage').src='klcse.png'">
+    Change Image
+</button>
+<br><br>
+
+<p id="multiChange">Watch me change!</p>
+<button onclick="
+    let el = document.getElementById('multiChange');
+    el.style.color = 'green';
+    el.style.fontSize = '24px';
+    el.innerHTML = 'Updated!';
+">
+    Change Everything
+</button>
+
+<br><br>
+<input type="text" id="email" placeholder="Enter email">
+<button onclick="
+    let email = document.getElementById('email').value;
+    if(email.includes('@')) {
+        alert('Valid Email');
+    } else {
+        alert('Invalid Email');
+    }
+">
+    Check Email
+</button>
+
+
+
+
+
+
+
+
+</body>
+</html>
